@@ -15,7 +15,7 @@ class ETH implements ValidationInterface
 
     public function validate()
     {
-        return preg_match('/^(0x)?[0-9a-f]{40}$/i', $this->address);
+        return preg_match('/^0x[a-fA-F0-9]{40}$/i', $this->address);
     }
 
 }
